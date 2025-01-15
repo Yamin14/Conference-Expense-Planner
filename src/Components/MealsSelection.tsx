@@ -27,7 +27,7 @@ const MealsSelection = () => {
 
       <div id='noOfPeople'>
         <label htmlFor="">No. of People: </label>
-        <input type="number" defaultValue={30} min={2} max={50} 
+        <input type="number" defaultValue={noOfPeople} min={2} max={50} 
           onKeyDown={(e) => e.preventDefault()}
           onChange={(e) => dispatch(setPeople(e.target.value))} />
       </div>
@@ -36,7 +36,7 @@ const MealsSelection = () => {
         {meals.map((meal) => {
           return (
             <div className="meal">
-              <input id={meal.name} type="checkbox"
+              <input id={meal.name} type="checkbox" defaultChecked={meal.selected}
                 onChange={() => dispatch(toggle(meal.name))} />
               <label htmlFor={meal.name}>{meal.name}</label> <br />
               <label htmlFor="">${meal.price}</label>

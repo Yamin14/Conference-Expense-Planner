@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Styles/total.css'
 import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'
@@ -10,9 +10,25 @@ const Total = () => {
     //get rooms
     const rooms = useSelector((state: RootState) => state.rooms.rooms);
     const addOns = useSelector((state: RootState) => state.addOns.addOns);
-    const meals = useSelector((state: RootState) => state.meals.meals);
+    const meals = useSelector((state: RootState) => state.meals.meals)
+        .filter(meal => meal.selected);
     const noOfPeople = useSelector((state: RootState) => state.meals.noOfPeople);
 
+    //estimating total cost
+    const [total, setTotal] = useState(0);
+    useEffect(() => {
+        
+        let temp = rooms.map(room => room.price * room.quantity)
+            .reduce((acc, price) => acc + price, 0);
+        temp += addOns.map(addOn => addOn.price * addOn.quantity)
+            .reduce((acc, price) => acc + price, 0);
+        temp += meals.map(meal => meal.price * noOfPeople)
+            .reduce((acc, price) => acc + price, 0);
+
+        setTotal(temp);
+    }, [rooms, addOns, meals, noOfPeople]);
+
+    //return
     return (
     <>
         <Helmet>
@@ -20,8 +36,8 @@ const Total = () => {
             </body>
         </Helmet>
         
-        <h1>Total Cost For The Event</h1>
-        <h1>$</h1>
+        <h1 id='totalHeading'>Total Cost For The Event</h1>
+        <h1 id="total">${total}</h1>
 
         <table>
             <tr>
@@ -48,6 +64,16 @@ const Total = () => {
                     <td>${addOn.price * addOn.quantity}</td>
                 </tr>);
             })}
+
+            {meals.filter(meal => meal.selected).map((meal) => {
+                return (<tr>
+                    <td>{meal.name}</td>
+                    <td>${meal.price}</td>
+                    <td>For {noOfPeople} people</td>
+                    <td>${meal.price * noOfPeople}</td>
+                </tr>);
+            })}
+
         </table>
     </>
   )
