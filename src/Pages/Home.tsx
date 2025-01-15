@@ -1,5 +1,7 @@
 
 import React from 'react'
+import {Helmet} from 'react-helmet'
+import '../Styles/home.css'
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -13,6 +15,10 @@ const Home = () => {
   //return
   return (
     <>
+      <Helmet>
+        <body className='homeBody'>
+        </body>
+      </Helmet>
         <div className='landing-page-bg'>
         </div>
   

@@ -1,0 +1,9 @@
+
+.totalBody {
+    display: unset;
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+}

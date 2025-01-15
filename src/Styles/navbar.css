@@ -1,0 +1,31 @@
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(15, 15, 75);
+}
+
+.navbar h1 {
+    flex: 3;
+    color: darkgoldenrod;
+}
+
+.buttons {
+    flex: 5;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons * {
+    color: white;
+    font-size: large;
+}
+
+.navbar button {
+    flex: 1;
+    background-color: darkgoldenrod;
+    color: black;
+}

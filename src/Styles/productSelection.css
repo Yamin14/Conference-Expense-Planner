@@ -1,0 +1,84 @@
+
+.productBody {
+    display: unset;
+    overflow-x: hidden;
+}
+
+/* Heading */
+.heading {
+    background-color: rgb(13, 13, 61);
+    width: 80%;
+    padding: 15px 0;
+    margin: 20px auto 50px auto;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 18%);
+    row-gap: 50px;
+    column-gap: 7%;
+    padding: 0 3.5%;
+}
+
+/* Room & Add On Selection */
+.item {
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+}
+
+.item p {
+    margin: 5px;
+}
+
+.incrementButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+.incBtn {
+    background-color: rgb(18, 18, 124);
+}
+
+.decBtn {
+    background-color: aqua;
+    color: black;
+}
+
+.total {
+    background-color: azure;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 10px 50px;
+    color: black;
+    width: fit-content;
+}
+
+/* Meals Selection */
+.meals {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 20%);
+}
+
+.meal {
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+#noOfPeople {
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+#noOfPeople input {
+    font-size: medium;
+}
