@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../Styles/total.css'
 import { Helmet } from 'react-helmet'
 import { useSelector } from 'react-redux'

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { decremenet, incremenet } from '../store/roomSlice'
 import { useDispatch } from 'react-redux'
 

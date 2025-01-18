@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../Styles/navbar.css'
 import '../Styles/productSelection.css'
 import NavBar from '../Components/NavBar'

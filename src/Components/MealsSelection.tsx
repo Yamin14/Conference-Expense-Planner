@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Heading from './Heading'
 import { useDispatch, useSelector } from 'react-redux'
 import { setPeople, toggle } from '../store/mealsSlice'

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Heading from './Heading'
-import addOns from '../store/addOns';
 import AddOn from './AddOn';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';

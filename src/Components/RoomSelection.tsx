@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Heading from './Heading'
 import Room from './Room'
 import { useSelector } from 'react-redux'

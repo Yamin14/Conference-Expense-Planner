@@ -1,6 +1,5 @@
 
 import { configureStore } from "@reduxjs/toolkit";
-import roomSlice from "./roomSlice";
 import roomsReducer from './roomSlice'
 import addOnsReducer from './addOnSlice'
 import mealsReducer from './mealsSlice'
