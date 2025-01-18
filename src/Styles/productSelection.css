@@ -82,3 +82,41 @@
 #noOfPeople input {
     font-size: medium;
 }
+
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, 45%);
+        row-gap: 50px;
+        column-gap: 5%;
+        row-gap: 30px;
+        padding: 0 2.5%;
+    }
+
+    .heading {
+        font-size: large;
+        padding: 10px 0;
+        margin: 20px auto 20px auto;
+    }
+
+    .item img {
+        height: 120px;
+    }
+
+    .meals {
+        grid-template-columns: repeat(2, 40%);
+    }
+
+    .total {
+        margin: 30px auto;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 30%);
+        row-gap: 50px;
+        column-gap: 5%;
+        padding: 0 2.5%;
+    }
+}

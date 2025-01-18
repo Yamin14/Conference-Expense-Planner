@@ -24,7 +24,7 @@ const Home = () => {
   
         <div className='content'>
           <div className='head'>
-            <h1>Conference Expense Planner</h1>
+            <h1 id='title'>Conference Expense Planner</h1>
             <p>Plan your next major event with us!</p>
             <button onClick={productSelectionPage}>Get Started!</button>
           </div>

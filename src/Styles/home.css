@@ -48,3 +48,33 @@
     padding: 0 100px;
     text-align: left;
   }
+
+  @media screen and (max-width: 480px) {
+
+    .content {
+      flex-direction: column;
+      padding: 5px;
+    }
+
+    #title {
+      font-size: x-large;
+    }
+
+    .body, .head {
+      font-size: small;
+    }
+
+    .body {
+      width: 80%;
+      text-align: center;
+      padding: 0 20px;
+      margin-top: 20px;
+    }
+
+    .landing-page-bg {
+      background-attachment: scroll;
+      height: unset;
+      min-height: 100vh;
+    }
+
+  }
