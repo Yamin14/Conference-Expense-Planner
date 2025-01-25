@@ -1,9 +1,9 @@
 
-import cr from '../../public/conference-room.jpeg'
-import ah from '../../public/auditorium-hall.jpeg'
-import pr from '../../public/presentation-room.jpeg'
-import lmr from '../../public/large-meeting-room.jpeg'
-import smr from '../../public/small-meeting-room.jpeg'
+import cr from '../../public/assets/conference-room.jpeg'
+import ah from '../../public/assets/auditorium-hall.jpeg'
+import pr from '../../public/assets/presentation-room.jpeg'
+import lmr from '../../public/assets/large-meeting-room.jpeg'
+import smr from '../../public/assets/small-meeting-room.jpeg'
 
 const rooms = [{
     name: "Conference Room",

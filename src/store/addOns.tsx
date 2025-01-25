@@ -1,9 +1,9 @@
 
-import pr from '../../public/projector.jpeg'
-import sp from '../../public/speaker.jpeg'
-import mp from '../../public/microphone.jpeg'
-import wb from '../../public/whiteboard.jpeg'
-import lt from '../../public/laptops.jpeg'
+import pr from '../../public/assets/projector.jpeg'
+import sp from '../../public/assets/speaker.jpeg'
+import mp from '../../public/assets/microphone.jpeg'
+import wb from '../../public/assets/whiteboard.jpeg'
+import lt from '../../public/assets/laptops.jpeg'
 
 const addOns = [{
     name: "Projectors",
