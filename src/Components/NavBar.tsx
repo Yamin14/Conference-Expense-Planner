@@ -6,7 +6,7 @@ const NavBar = () => {
   const navigate = useNavigate();
 
   const homePage = () => {
-    navigate("/");
+    navigate("/conference-expense-planner");
   }
 
   const totalPage = () => {

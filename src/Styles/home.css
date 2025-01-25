@@ -2,7 +2,7 @@
   .landing-page-bg {
     position: absolute;
     z-index: -1;
-    background-image: url('./assets/bg-image.jpeg');
+    background-image: url('../../public/assets/bg-image.jpeg');
     background-size: cover;
     background-position: center;
     top: 0;
