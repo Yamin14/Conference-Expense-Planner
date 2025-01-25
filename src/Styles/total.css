@@ -30,15 +30,6 @@ tr:nth-child(odd) {
     background-color: #393939;
 }
 
-@media screen and (max-width: 900px) {
-    .grid {
-        grid-template-columns: repeat(3, 30%);
-        row-gap: 50px;
-        column-gap: 5%;
-        padding: 0 2.5%;
-    }
-}
-
 @media screen and (max-width: 480px) {
 
     #totalHeading {

@@ -27,8 +27,8 @@ const MealsSelection = () => {
 
       <div id='noOfPeople'>
         <label htmlFor="">No. of People: </label>
-        <input type="number" defaultValue={noOfPeople} min={2} max={50} 
-          onKeyDown={(e) => e.preventDefault()}
+        <input id='noPeopleInput' type="number" value={noOfPeople} min={2} max={50} 
+          placeholder="0"
           onChange={(e) => dispatch(setPeople(e.target.value))} />
       </div>
 

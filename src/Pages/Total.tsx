@@ -10,6 +10,7 @@ const Total = () => {
     //get rooms
     const rooms = useSelector((state: RootState) => state.rooms.rooms);
     const addOns = useSelector((state: RootState) => state.addOns.addOns);
+
     const meals = useSelector((state: RootState) => state.meals.meals)
         .filter(meal => meal.selected);
     const noOfPeople = useSelector((state: RootState) => state.meals.noOfPeople);
@@ -65,7 +66,7 @@ const Total = () => {
                 </tr>);
             })}
 
-            {meals.filter(meal => meal.selected).map((meal) => {
+            {noOfPeople > 0 && meals.filter(meal => meal.selected).map((meal) => {
                 return (<tr>
                     <td>{meal.name}</td>
                     <td>${meal.price}</td>

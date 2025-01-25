@@ -6,7 +6,7 @@ const NavBar = () => {
   const navigate = useNavigate();
 
   const homePage = () => {
-    navigate("/conference-expense-planner");
+    navigate("/");
   }
 
   const totalPage = () => {
@@ -24,7 +24,7 @@ const NavBar = () => {
         </div>
 
         <div className='buttonDiv'>
-          <button onClick={totalPage}>Show Details</button>
+          <button id='detailsBtn' onClick={totalPage}>Show Details</button>
         </div>
     </div>
   )

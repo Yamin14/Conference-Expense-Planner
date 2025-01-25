@@ -24,7 +24,9 @@ const mealsSlice = createSlice({
 
     reducers: {
         setPeople : (state, action) => {
-            state.noOfPeople = action.payload;
+            const val = action.payload;
+            if (val >= 0 && val <= 50)
+                state.noOfPeople = action.payload;
         },
 
         toggle : (state, action) => {
